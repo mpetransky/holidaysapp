@@ -1,0 +1,203 @@
+/* Configuration */
+
+:root {
+    --color-primary: #2563eb;
+
+    --text-default: #1f2937;
+    --text-light: #6b7280;
+    --text-primary: var(--color-primary);
+
+
+    --shadow-color: #e5e7eb;
+}
+
+/* Defaults */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-default);
+    line-height: 1.5rem;
+}
+
+/* Utils */
+
+.flex {
+    display: flex;
+
+    justify-content: space-between;
+}  
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--col {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+
+    /* justify-items: center; */
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Components */
+
+.button {
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.button--primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.button--primary:hover {
+    background-color: #3b82f6;
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 var(--shadow-color);
+    margin: 0 1rem;
+}
+
+.card__body {
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+.card__image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card__text {
+    padding-top: 1rem;
+}
+
+.footer {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.header {
+    padding: 1rem 2rem;
+}
+
+.inspiration {
+}
+
+.inspiration__heading {
+    font-weight: 600;
+}
+
+.inspiration__text {
+
+}
+
+.logo {
+    font-weight: 600;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-default);
+}
+
+.nav a:hover {
+    color: var(--text-light);
+}
+
+.results {
+}
+
+.result {
+    margin: 2rem 0;
+}
+
+.result__body {
+    padding: 1.5rem;
+}
+
+.result__hotel-name {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.result__room-type {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.result__image {
+    width: 100%;
+}
+
+.result__included {
+    margin-top: 0.2rem;
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    list-style-type: none;
+}
+
+.result__price {
+    text-align: end;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.result__button {
+    text-align: end;
+    padding: 1.5rem;
+}
+
+.search {
+}
+
+.search__country, .search__country:focus {
+    width: 100%;
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: solid 3px gold;
+    outline: none;
+    -webkit-appearance: none; 
+}
+
+.section {
+    max-width: 1024px;
+    margin: 4rem auto;
+}

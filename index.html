@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script defer type="module" src="app.js"></script>
+    </head>
+    <body>
+        <header class="header grid grid--2-cols">
+            <div class="logo">Holidays App</div>
+            <nav>
+                <ul class="nav flex flex--row">
+                    <li class="nav__item"><a href="#">Stays</a></li>
+                    <li class="nav__item"><a href="#">Flights</a></li>
+                    <li class="nav__item"><a href="#">Rentals</a></li>
+                    <li class="nav__item"><a href="#">Inspiration</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="search section flex flex--row">
+            <select class="search__country" id="search-country">
+                <option value="uae">United Arab Emirates</option>
+                <option value="oman">Oman</option>
+                <option value="maldives">Maldives</option>
+                <option value="tanzania">Tanzania</option>
+            </select>
+            <button class="button button--primary" id="search-button">Search</button>
+        </section>
+        <main class="results section">
+            
+            <!-- <div class="result card grid grid--3-cols">
+                <img class="result__image" src="images/rooms/room1.jpg" alt="Image of a hotel room." />
+                <div class="result__body">
+                    <p class="result__hotel-name">Double Tree Dubai</p>
+                    <p class="result__room-type">Double Room</p>
+                    <ul class="result__included">
+                        <li>Breakfast Included</li>
+                        <li>Free Cancelation</li>
+                    </ul>
+                </div>
+                <div class="flex flex--col">
+                    <div class="result__price">&euro; 294</div>
+                    <div class="result__button">
+                        <button class="button button--primary">Book this room</button>
+                    </div>
+                </div>
+            </div> -->
+
+        </main>
+        <section class="inspiration section grid grid--4-cols"></section>
+        <footer class="footer section">&copy; 2023 Holidays.com</footer>
+    </body>
+</html>
